@@ -168,10 +168,6 @@ void enum_types(ICorDebugModule *module)
                 {
                     hr = bp->Activate(TRUE);
                     printf("\tActivate(TRUE) breakpoint %08x\n", hr);
-
-                    hr = bp->Activate(FALSE);
-                    printf("\tActivate(FALSE) breakpoint %08x\n", hr);
-
                 }
                 else 
                 {
