@@ -99,7 +99,7 @@ public:
         /* [in] */ BOOL unhandled)    
     {
         PrintWhereIAm(); 
-        //print_callstack(pThread);
+        printf("unhandled %s\n", unhandled ? "true" : "false");
         print_all_callstakcs(m_pProcess);
         pAppDomain->Continue(FALSE); 
         return S_OK; 
